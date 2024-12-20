@@ -7,7 +7,7 @@ import logoSunflower from '../assets/images/logosunflower.jpg';
 import TimeCapsuleButton from './TimeCapsuleButton';
 import Navbar from './Navbar';
 import { ToastContainer } from 'react-toastify';
-
+import astronaut from '../assets/images/astronaut.jpg'
 
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
 
       <div id="home" className="sec">
         <div className="centered-image">
-          <img src="./src/assets/images/astronaut.jpg" alt="Astronaut" className="centered-image" />
+          <img src={astronaut} alt="Astronaut" className="centered-image" />
         </div>
         <TravelButton />
         <TimeCapsuleButton/>
