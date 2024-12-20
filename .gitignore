@@ -1,0 +1,20 @@
+# Node modules
+/node_modules/
+
+
+# Ignore node_modules for both client and server
+/client/node_modules/
+/server/node_modules/
+
+# Ignore environment variables (backend)
+/server/.env
+
+# Ignore logs
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Build output (for frontend build)
+client/build/
