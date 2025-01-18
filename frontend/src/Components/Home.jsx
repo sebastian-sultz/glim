@@ -18,7 +18,7 @@ const Home = () => {
       
 
       <div id="home" className="sec">
-        <div className="centered-image">
+        <div>
           <img src={astronaut} alt="Astronaut" className="centered-image" />
         </div>
         <TravelButton />

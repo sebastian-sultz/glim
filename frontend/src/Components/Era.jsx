@@ -6,7 +6,8 @@ import React from 'react';
 import TimeCapsuleButton from './TimeCapsuleButton';
 const Era = () => {
   return (
-    <div>
+    <div className='EraPage'>
+      <h1>Era</h1>
     <div className='era-container'>
       <div className='era-grid'>
         <div className='era-item'>

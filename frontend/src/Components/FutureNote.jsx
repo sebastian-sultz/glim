@@ -35,7 +35,7 @@ const FutureNote = () => {
               name="postContent"
               rows={4}
               cols={40}
-              placeholder="Koi itna sunder kaise hi sakta hai🤔🤔😶‍🌫️😶‍🌫️"
+              placeholder="Write here!!😶‍🌫️😶‍🌫️"
             />
           </label>
         </div>
