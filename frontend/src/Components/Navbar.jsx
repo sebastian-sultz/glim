@@ -41,7 +41,7 @@ const Navbar = () => {
   const handleUnlockPast = () => {
     // If the user is logged in, redirect to the 'UnlockPast' page, otherwise, redirect to login
     if (loggedInUser) {
-      navigate('/unlock-past'); // This should be a new component you create
+      navigate('/saved-notes'); // This should be a new component you create
     } else {
       navigate('/login'); // If not logged in, redirect to login page
     }

@@ -1,18 +1,23 @@
 
-const Subscription=()=> {
+const FutureEnhancement = () => {
   return (
     <div className='SubscriptionPage'>
-        
-        <div  ><h1>Subscription</h1></div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde dolorem tempore perferendis delectus eligendi rerum quasi beatae facilis quidem, commodi iure, magnam impedit sit sint assumenda nulla aliquam reiciendis tenetur.
-    Sit error dignissimos illum sapiente voluptatum ipsam minima, expedita voluptatibus nobis aut amet laudantium aperiam optio numquam distinctio repellat aspernatur voluptates debitis ad? Temporibus, adipisci quibusdam quos fugiat impedit beatae.
-    Fugiat, cupiditate eaque amet sequi sunt eos? Fugiat dicta nostrum cupiditate eveniet dolorem adipisci expedita id minus quam, ipsa est, perferendis delectus, sit harum sequi. Sit quos illum qui exercitationem.
-    Voluptates eos quis est nulla ipsum porro dignissimos adipisci voluptatem alias numquam necessitatibus quaerat aut ad veritatis vel tempore aspernatur amet optio temporibus velit, saepe consectetur nostrum molestiae accusamus. Veritatis.
-    Sit facere architecto explicabo.</p> <p> Hic quisquam veniam possimus officia in ipsa, ad, quidem repellendus natus quis blanditiis illo corrupti distinctio beatae? Consectetur veniam, ab tempore non modi facere illo earum.
-    Fugiat perspiciatis, molestiae autem beatae laborum earum voluptas ea culpa cum omnis esse odit eos, a neque, aut sed inventore sequi! Temporibus iure earum ea soluta voluptatem quia cum reprehenderit?
-    Eius numquam quaerat voluptas placeat, debitis recusandae? Perspiciatis placeat mollitia perferendis! Nam aspernatur architecto autem odit at quod ullam sunt numquam, iusto a! Error eligendi non harum, totam repellat saepe?
-    Debitis doloribus explicabo pla iusto nihil tempora vel eaque molestias, incidunt repellat sit saepe totam numquam voluptates magni hic nisi rem, quod suscipit? Perspiciatis delectus nulla beatae!
-    Perferendis incidunt id consectetur quasi, qui ex deleniti dicta, facere ipsa pariatur natus voluptatum? Eligendi autem amet minima aspernatur doloremque sapiente optio ratione veniam minus ullam. Error nihil vel fugiat? </p></div>
+
+      <div>
+        <h1>Future Enhancement</h1>
+      </div>
+
+      <p> At the moment, our Future Messaging feature allows users to send an unlimited number of messages to their future selves. There are no restrictions on the number of messages a user can send, and each message can be scheduled for any future date.</p>
+
+      <h2>Planned Enhancements</h2>
+      <p>We plan to introduce a subscription model in the near future. Under this model:</p>
+      <ul>
+        <li><span>Free Access:</span>Each user will be allowed to send 2 free messages to their future self, with no need for a subscription.</li>
+        <li><span>Premium Access:</span>Users who wish to send more than 2 messages will need to subscribe. The premium plan will allow users to schedule and manage up to 10 future messages. Additional functionality may be added in the future as part of the subscription model.</li>
+      </ul>
+
+    </div>
   )
 }
 
-export default Subscription;
+export default FutureEnhancement;

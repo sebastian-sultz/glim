@@ -1,45 +1,40 @@
-import { Link } from 'react-router-dom';
-import eraplant from '../assets/images/eraplant.jpg';
+// src/components/Era.js
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import TimeCapsuleButton from "./TimeCapsuleButton";
+import EraImg from "../assets/images/eraplant.jpg"
 
-
-import React from 'react';
-import TimeCapsuleButton from './TimeCapsuleButton';
 const Era = () => {
-  return (
-    <div className='EraPage'>
-      <h1>Era</h1>
-    <div className='era-container'>
-      <div className='era-grid'>
-        <div className='era-item'>
-          <button className='era-button'>
-          <Link to="/era/eraseventy" className="nav-link">
+  const [eras, setEras] = useState([]);
 
-            <img src={eraplant} alt='70s' />
-            </Link>
-          </button>
-          <p className='era-caption'>70s</p>
-        </div>
-        <div className='era-item'>
-          <button className='era-button'>
-            <img src={eraplant} alt='80s' />
-          </button>
-          <p className='era-caption'>80s</p>
-        </div>
-        <div className='era-item'>
-          <button className='era-button'>
-            <img src={eraplant} alt='90s' />
-          </button>
-          <p className='era-caption'>90s</p>
-        </div>
-        <div className='era-item'>
-          <button className='era-button'>
-            <img src={eraplant} alt='2000s' />
-          </button>
-          <p className='era-caption'>2000s</p>
+  useEffect(() => { 
+    axios
+      .get("http://localhost:8080/api/eras")
+      .then((response) => setEras(response.data))
+      .catch((error) => console.error("There was an error fetching the eras:", error));
+  }, []);
+
+  return (
+    <div className="EraPage">
+      <h1>Era</h1>
+
+      <div className="era-container">
+        <div className="era-grid">
+          {eras.map((era) => (
+            <div key={era._id} className="era-item">
+              <button className="era-button">
+                <Link to={`/era/${era._id}`} className="nav-link">
+                  <img src={EraImg} alt={era.name} className="era-img" />
+                </Link>
+              </button>
+              <p className="era-caption">{era.name}</p>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
-    <TimeCapsuleButton/>
+      {/* Assuming TimeCapsuleButton remains the same */}
+      <TimeCapsuleButton />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 body, html {
-  font-family: "Lato", serif;
+  font-family: serif;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -213,30 +213,52 @@ a {
 
 
 
-/* Calender */
-
-/* Styles for the msgContainer */
-
-
-/* Button Styles */
-
 /* Calendar Popup Styling */
 .calendarPopup {
   position: absolute;
-  bottom: 80px;        /* Distance from the bottom of the page */
+  bottom: 60px;
   left: 50%;    
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background-color: rgb(239, 239, 159);
+  transform: translate(-50%, -50%); 
+  padding: 15px;
+  background-color: rgb(239, 239, 159); 
   border-radius: 10px;
+  z-index: 1000; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  text-align: center; 
 
-
- 
-  z-index: 1000; /* Ensure calendar is above other elements */
 }
 
+/* Selected Date */
 .calendarPopup .MuiPickersDay-daySelected {
-  background-color: #3f51b5; /* Customize selected date color */
+  background-color: rgb(103, 103, 62); 
+  color: white; 
+}
+
+/* Save Note Button*/
+.saveNoteButton {
+  background: rgba(238, 238, 142, 0.8); 
+ 
+  border: none;
+  margin-top: 10px; 
+  padding: 8px 15px;
+  font-size: 16px;
+ color:#474747;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100%; 
+  max-width: 200px; 
+}
+
+.saveNoteButton:hover {
+  background: rgba(238, 238, 142, 0.9); 
+}
+
+.saveNoteButton:active {
+  background: rgba(238, 238, 142, 1); 
+  transform: scale(0.98); 
 }
 
 
@@ -292,6 +314,26 @@ a {
   color: rgba(238, 238, 142, 0.8);
   margin: 5px 0px;
  
+}
+
+.SubscriptionPage span{
+  font-weight: bold;
+  font-size: larger;
+  color: rgba(238, 238, 142, 0.8);
+  padding-right: 10px;
+  line-height: 1.4;
+}
+
+.SubscriptionPage li {
+  padding-bottom: 20px;
+  line-height: 1.4;
+  margin: 2px;
+
+}
+
+.SubscriptionPage h2 {
+  color: rgba(238, 238, 142, 0.8);
+
 }
 
 p{
@@ -521,6 +563,17 @@ nav ul {
   height: 500px;              
 }
 
+.helpit {
+  position: absolute;  /* Uses absolute positioning */
+    bottom: 20px;        /* Distance from the bottom of the page */
+    left: 35%;           /* Centers the button horizontally */
+    transform: translateX(-50%);
+ 
+ 
+    cursor: pointer;
+    z-index: 20;
+}
+
 .sendButton {
   position: absolute;  /* Uses absolute positioning */
     bottom: 20px;        /* Distance from the bottom of the page */
@@ -546,6 +599,16 @@ nav ul {
   z-index: 2;                
 }
 
+.savedMessage {
+  position: absolute;        
+  top: 12rem;                
+  left: 41%;                 
+  transform: translateX(-51%); 
+  border-radius: 10px;       
+  z-index: 2;             
+}
+
+
 textarea {
   background-color: transparent;
   width: 390px;          
@@ -567,7 +630,9 @@ textarea {
  }
 
 
+ /* savedNotes */
 
+ 
 
 
 
@@ -941,6 +1006,7 @@ textarea {
   font-size: 35px;
   text-align: center;
 }
+
 .movieBlock, .musicBlock{
   display: flex;
   flex-wrap: wrap;  
