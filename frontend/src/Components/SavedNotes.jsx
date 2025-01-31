@@ -3,10 +3,9 @@ import axios from 'axios';
 import letter from '../assets/images/letter.png';
 
 const SavedNotes = () => {
-  const [notes, setNotes] = useState([]); // Manage saved notes
-  const token = localStorage.getItem('token'); // Assuming token is stored in localStorage
+  const [notes, setNotes] = useState([]); 
+  const token = localStorage.getItem('token'); 
 
-  // Fetch saved notes from the database
   useEffect(() => {
     const fetchNotes = async () => {
       if (!token) {
@@ -17,13 +16,13 @@ const SavedNotes = () => {
       try {
         const response = await axios.get('http://localhost:8080/api/future-notes', {
           headers: {
-            Authorization: `Bearer ${token}`, // Token sent as Bearer in Authorization header
+            Authorization: `Bearer ${token}`, 
           },
         });
 
         const currentDate = new Date();
         const filteredNotes = response.data.notes.filter((note) =>
-          new Date(note.date) >= currentDate // Show only notes with dates less than or equal to today
+          new Date(note.date) <= currentDate // Show only notes with dates less than or equal to today
         );
 
         setNotes(filteredNotes);
@@ -44,7 +43,7 @@ const SavedNotes = () => {
         {/* Display saved notes */}
         <div  className="savedMessage">
           {notes.length === 0 ? (
-            <p>No messages available to display.</p> // Message if no valid notes exist
+            <p>No messages available to display.</p>
           ) : (
             <ul>
               {notes.map((note) => (

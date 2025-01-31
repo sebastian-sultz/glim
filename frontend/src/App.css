@@ -658,7 +658,7 @@ textarea {
   border-radius: 5px;       
   resize: vertical;         
   font-size: 1rem;  
-  color: #fff;         
+       
 }
 
  textarea:focus{

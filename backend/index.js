@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const AuthRouter = require('./Routes/AuthRouter');
-const ProductRouter = require('./Routes/ProductRouter');
+
 const eraRoutes = require('./Routes/eraRoutes');
 const path = require("path");
 
@@ -25,7 +25,7 @@ app.use(express.static(buildpath));
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/auth', AuthRouter);
-app.use('/products', ProductRouter);
+
 app.use("/api/eras", eraRoutes);
 app.use('/api/future-notes', futureNoteRoutes);
 

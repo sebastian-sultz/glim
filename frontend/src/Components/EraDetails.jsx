@@ -115,7 +115,7 @@ const EraDetails = () => {
         {eraDetails.details
           .filter((detail) => detail.type === "book")
           .map((detail) => {
-            const media = detail.mediaUrl; // Declare media here
+            const media = detail.image; // Declare media here
             return (
               <div key={detail._id} className="movieBox">
                 <img
