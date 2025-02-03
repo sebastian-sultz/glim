@@ -1,11 +1,13 @@
 body,
 html {
+  height: 100%;
+  width: 100%;
   font-family: serif;
   font-style: normal;
   margin: 0;
   padding: 0;
   background-color: #000;
-  cursor: url('./src/assets/images/Spaceship.png'), pointer !important;
+  cursor: url("./src/assets/images/Spaceship.png"), pointer !important;
 }
 
 h1 {
@@ -26,7 +28,6 @@ h1 {
     /* Even smaller font size for mobile devices */
   }
 }
-
 
 h2 {
   font-size: 2rem;
@@ -54,38 +55,30 @@ h2 {
   }
 }
 
-
 .toastt {
   margin-top: 75px;
 }
 
+.glimpse {
+  color: rgba(202, 125, 235, 0.913);
+  font-weight: bold;
+}
 
 label {
   font-size: 20px;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
 
 .loginPage {
   position: absolute;
   margin-top: 50px;
-  /* top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);  */
   z-index: 5;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-
 }
-
-
 
 .notification-dot {
   position: absolute;
@@ -116,7 +109,6 @@ body {
   animation: pulse 1.5s infinite ease-in-out;
   transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .notification-dot:hover,
 .notification-dot1:hover {
@@ -155,7 +147,6 @@ body {
 
 /* Dark mode adaptation */
 @media (prefers-color-scheme: dark) {
-
   .notification-dot,
   .notification-dot1 {
     background: radial-gradient(circle, #ff9ff3, #d980fa);
@@ -169,7 +160,6 @@ body {
   }
 }
 
-
 .loginContainer {
   position: relative;
   background-color: rgba(238, 238, 142, 0.6);
@@ -182,17 +172,16 @@ body {
   margin-top: 50px;
 }
 
-.loginContainer span{
+.loginContainer span {
   font-size: large;
-  
 }
 
-.loginContainer>h1 {
+.loginContainer > h1 {
   margin-bottom: 15px;
   text-align: center;
 }
 
-.loginContainer>form {
+.loginContainer > form {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -201,17 +190,14 @@ body {
 .loginContainer div {
   display: flex;
   flex-direction: column;
-
 }
 
-.loginContainer div>label {
+.loginContainer div > label {
   padding-left: 10px;
   margin-bottom: 10px;
-
 }
 
 .loginContainer input {
-
   width: auto;
   padding: 13px;
   background: transparent;
@@ -220,10 +206,8 @@ body {
   height: 25px;
   color: #fff;
   font-size: medium;
-  letter-spacing: 0.1rem
+  letter-spacing: 0.1rem;
 }
-
-
 
 .loginContainer input:focus {
   outline: none;
@@ -234,14 +218,9 @@ body {
 }
 
 .loginContainer input::placeholder {
-
   font-size: 13px;
   color: #fff;
-
-
 }
-
-
 
 .loginButton {
   background-color: rgb(44, 43, 43);
@@ -258,10 +237,7 @@ body {
   align-items: center;
   justify-content: center;
   align-self: center;
-
-
 }
-
 
 .loginLink {
   padding-left: 10px;
@@ -274,11 +250,7 @@ body {
   height: 40px;
   width: auto;
   cursor: pointer;
-
 }
-
-
-
 
 /* Popover styling */
 
@@ -328,7 +300,6 @@ a {
   border-color: transparent transparent rgba(239, 239, 159, 0.5) transparent;
   /* Use theme color */
   transition-duration: 0.3s;
-
 }
 
 /* Show popover on hover */
@@ -375,8 +346,6 @@ a {
     background-color: rgba(239, 239, 159, 0.5);
     color: white;
   }
-
-
 }
 
 /* Responsive Design for Tablet Screens */
@@ -402,14 +371,11 @@ a {
   }
 
   .notification-dot1 {
-
     top: 152px;
     right: 25px;
     width: 12px;
     height: 12px;
-
   }
-
 }
 
 /* Smaller Mobile Screens */
@@ -435,7 +401,6 @@ a {
   }
 
   .notification-dot1 {
-
     top: 143px;
     right: 5px;
   }
@@ -446,13 +411,11 @@ a {
   }
 
   .loginContainer {
-  
     width: 90%;
     max-width: 350px;
     margin-top: 0;
   }
 }
-
 
 /* Calendar Popup Styling */
 .calendarPopup {
@@ -467,7 +430,6 @@ a {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   max-width: 200px;
   text-align: center;
-
 }
 
 /* Selected Date */
@@ -502,8 +464,6 @@ a {
   transform: scale(0.98);
 }
 
-
-
 /* STAR FIELD */
 
 .star-field {
@@ -521,8 +481,6 @@ a {
   background-color: #fff;
   animation: star-fall linear infinite;
 }
-
-
 
 @keyframes star-fall {
   0% {
@@ -553,7 +511,6 @@ a {
   max-width: 800px;
   margin: 50px auto;
   font-size: large;
-
 }
 
 .aboutPage h1,
@@ -562,7 +519,6 @@ a {
 .SubscriptionPage h1 {
   color: rgba(238, 238, 142, 0.8);
   margin: 0px 5px;
-
 }
 
 .SubscriptionPage span {
@@ -577,12 +533,10 @@ a {
   padding-bottom: 20px;
   line-height: 1.4;
   margin: 2px;
-
 }
 
 .SubscriptionPage h2 {
   color: rgba(238, 238, 142, 0.8);
-
 }
 
 p {
@@ -598,7 +552,6 @@ p {
   max-width: 85%;
   max-height: 75%;
   padding-top: 50px;
-
 }
 
 li {
@@ -612,7 +565,6 @@ li {
   margin-right: 15px;
   cursor: pointer;
   transition: color 0.3s ease;
-
 }
 
 .nav-link:hover,
@@ -629,7 +581,6 @@ li {
   z-index: 50;
 }
 
-
 .sec {
   display: flex;
   justify-content: center;
@@ -637,7 +588,6 @@ li {
   position: relative;
   padding-top: 100px;
   padding-bottom: 50px;
-
 }
 
 .travel-buttons {
@@ -681,33 +631,51 @@ li {
   background-color: rgba(238, 238, 142, 0.8);
 }
 
-
-/* Animation property */
 .futureButton {
   animation: wiggle 2s linear infinite;
   position: fixed;
   cursor: pointer;
-
   z-index: 1000;
-  background-color: #000;
-
+  background-color: transparent;
   border: none;
   transform-origin: 50% 5em;
-
   top: 68%;
   left: 84%;
+}
+
+.futureButton::after {
+  content: "LEAVE A MESSAGE FOR THE FUTURE";
+  position: absolute;
+  background: rgba(238, 238, 142, 0.8);
+  color: black;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  bottom: 100%;
+  left: 40%;
+  transform: translateX(-50%) translateY(10px);
+  pointer-events: none;
+  box-shadow: 0px 0px 8px rgba(238, 238, 142, 0.8);
+}
+
+.futureButton:hover::after {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .futureImg {
   height: 130px;
   width: 100px;
-
-
 }
 
 /* Keyframes */
 @keyframes wiggle {
-
   0%,
   7% {
     transform: rotateZ(0);
@@ -739,11 +707,7 @@ li {
   }
 }
 
-
 /* letter style */
-
-
-
 
 .cell {
   display: inline-block;
@@ -771,8 +735,6 @@ li {
     transform: scale(1);
   }
 }
-
-
 
 nav {
   display: flex;
@@ -803,7 +765,6 @@ nav ul {
   z-index: 0;
 }
 
-
 /*letterHead*/
 
 .msgContainer {
@@ -822,27 +783,10 @@ nav ul {
   height: 500px;
 }
 
-.helpit {
-  position: absolute;
-  /* Uses absolute positioning */
-  bottom: 20px;
-  /* Distance from the bottom of the page */
-  left: 35%;
-  /* Centers the button horizontally */
-  transform: translateX(-50%);
-
-
-  cursor: pointer;
-  z-index: 20;
-}
-
 .sendButton {
   position: absolute;
-  /* Uses absolute positioning */
   bottom: 20px;
-  /* Distance from the bottom of the page */
   left: 50%;
-  /* Centers the button horizontally */
   transform: translateX(-50%);
   background-color: transparent;
   border: none;
@@ -853,7 +797,6 @@ nav ul {
 .sendButton img {
   height: 100px;
 }
-
 
 .msgBody {
   position: absolute;
@@ -873,7 +816,6 @@ nav ul {
   z-index: 2;
 }
 
-
 textarea {
   background-color: transparent;
   width: 390px;
@@ -883,25 +825,17 @@ textarea {
   border-radius: 5px;
   resize: vertical;
   font-size: 1rem;
-
 }
 
 textarea:focus {
   outline: none;
-
 }
 
 textarea:focus::placeholder {
-  color: transparent
+  color: transparent;
 }
 
-
 /* savedNotes */
-
-
-
-
-
 
 /* era */
 
@@ -909,8 +843,6 @@ textarea:focus::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
 .era-grid {
@@ -923,9 +855,7 @@ textarea:focus::placeholder {
   text-align: center;
 }
 
-
 .era-caption {
-
   color: rgba(238, 238, 142, 0.8);
 }
 
@@ -941,8 +871,6 @@ textarea:focus::placeholder {
   cursor: pointer;
   padding: 0;
   z-index: 100;
-
-
 }
 
 .era-grid .era-item:nth-child(3),
@@ -950,13 +878,10 @@ textarea:focus::placeholder {
   margin-top: -20px;
 }
 
-
-
 .era-grid .era-item:nth-child(1),
 .era-grid .era-item:nth-child(2) {
   margin-top: 0px;
 }
-
 
 .era-button img {
   width: 200px;
@@ -977,16 +902,7 @@ textarea:focus::placeholder {
   font-weight: bold;
 }
 
-
-
-
-
-
-
-
-
 @media (max-width: 1024px) {
-
   nav {
     top: 10px;
     height: 30px;
@@ -995,10 +911,7 @@ textarea:focus::placeholder {
   .logo-image {
     width: 100px;
     height: auto;
-
   }
-
-
 
   .homePage,
   .aboutPage,
@@ -1036,10 +949,7 @@ textarea:focus::placeholder {
   .futureImg {
     height: 100px;
     width: 80px;
-
-
   }
-
 
   .centered-image {
     width: 65%;
@@ -1051,16 +961,10 @@ textarea:focus::placeholder {
   }
 }
 
-
-
 @media (max-width: 768px) {
-
   .userButton {
-
     height: 30px;
     margin-top: 3px;
-
-
   }
 
   .era-grid {
@@ -1078,7 +982,6 @@ textarea:focus::placeholder {
   .aboutPage h1,
   .EraPage h1,
   .SubscriptionPage h1 {
-
     margin: 0px 0px;
     padding: 0px;
   }
@@ -1086,7 +989,6 @@ textarea:focus::placeholder {
   .era-button img {
     width: 160px;
     height: 130px;
-
   }
 
   .era-grid .era-item:nth-child(3),
@@ -1125,7 +1027,6 @@ textarea:focus::placeholder {
   nav ul li {
     margin: 0;
     padding: 0;
-
   }
 
   .centered-image {
@@ -1158,8 +1059,6 @@ textarea:focus::placeholder {
     text-align: center;
     left: 0px;
     bottom: 0px;
-
-
   }
 
   .futureButton {
@@ -1167,26 +1066,25 @@ textarea:focus::placeholder {
     left: 82%;
   }
 
+  .futureButton::after {
+    white-space: wrap;
+  }
+
   .futureImg {
     height: 90px;
     width: 75px;
-
-
   }
 
   nav {
     top: 8px;
     height: 25px;
-
   }
 
   .logo-image {
     margin-top: -20px;
     width: 80px;
     height: auto;
-
   }
-
 
   .letterHead {
     width: 80%;
@@ -1210,18 +1108,13 @@ textarea:focus::placeholder {
     height: 250px;
     /* Reduce textarea height for smaller devices */
   }
-
-
 }
 
 @media (max-width: 500px) {
-
   nav {
     top: 0px;
     height: 20px;
-
   }
-
 
   .nav-link,
   .subscription-link {
@@ -1233,16 +1126,11 @@ textarea:focus::placeholder {
     margin-top: -20px;
     width: 70px;
     height: auto;
-
   }
-
 
   .era-grid {
-
     grid-template-columns: 1fr;
-
   }
-
 
   .homePage,
   .aboutPage,
@@ -1262,8 +1150,6 @@ textarea:focus::placeholder {
   .futureImg {
     height: 80px;
     width: 62px;
-
-
   }
 
   .letterHead {
@@ -1287,11 +1173,7 @@ textarea:focus::placeholder {
     height: 200px;
     /* Reduce height even further */
   }
-
-
 }
-
-
 
 /* General Styles */
 .eraHeading {
@@ -1327,11 +1209,10 @@ textarea:focus::placeholder {
   transition: transform 0.2s ease-in-out;
   box-shadow: inset 0 0 500px 500px rgba(109, 109, 97, 0.3);
   border-radius: 16px;
-
 }
 
-.movieBox>img,
-.musicBox>img {
+.movieBox > img,
+.musicBox > img {
   align-self: center;
 }
 
@@ -1349,9 +1230,7 @@ textarea:focus::placeholder {
   height: 350px;
 
   border-radius: 24px;
-
 }
-
 
 .movieName {
   font-size: 1rem;
@@ -1366,7 +1245,6 @@ textarea:focus::placeholder {
 }
 
 .movieTitle {
-
   display: flex;
 
   justify-content: space-between;
@@ -1374,16 +1252,11 @@ textarea:focus::placeholder {
   margin: 10px;
   font-weight: 300;
   font-size: larger;
-
 }
 
 .movieDetail {
   margin-top: auto;
 }
-
-
-
-
 
 .playButton {
   font-size: 2.5rem;
@@ -1397,7 +1270,6 @@ textarea:focus::placeholder {
   height: 45px;
   width: 45px;
 }
-
 
 .overlayMusic button {
   background: transparent;
@@ -1422,25 +1294,20 @@ textarea:focus::placeholder {
   width: 45px;
 }
 
-
 /* Show overlay on hover */
 .movieBox:hover .overlay,
 .musicBox:hover .overlayMusic {
   opacity: 1;
 }
 
-
-
 /* RESPONSIVE DESIGN */
 
 /* Tablets */
 @media (max-width: 1024px) {
-
   .movieBlock,
   .musicBlock,
   .bookBlock {
     grid-template-columns: repeat(2, 1fr);
-
   }
 
   .movieBox,
@@ -1459,27 +1326,21 @@ textarea:focus::placeholder {
     height: 38px;
     width: 38px;
   }
-
-
 }
 
 /* Mobile Screens */
 @media (max-width: 768px) {
-
   .movieBlock,
   .musicBlock,
   .bookBlock {
     grid-template-columns: repeat(1, 1fr);
-
   }
 
   .movieBox,
   .musicBox {
-
     padding: 10px;
     margin: 10px 0;
   }
-
 
   .movieImg {
     width: 95%;
@@ -1491,9 +1352,6 @@ textarea:focus::placeholder {
   .eraHeading {
     font-size: 28px;
   }
-
-
-
 }
 
 /* Small Mobile Screens */
@@ -1519,7 +1377,6 @@ textarea:focus::placeholder {
 
   .movieName {
     font-size: 1rem;
-
   }
 
   .playButton,
@@ -1527,8 +1384,4 @@ textarea:focus::placeholder {
     height: 35px;
     width: 35px;
   }
-
-
 }
-
-
